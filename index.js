@@ -48,7 +48,11 @@ const app = express();
 app.use(express.json());
 app.use(cors());
 app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
-// model
+app.use('/downloads', express.static(path.join(__dirname, 'public/downloads'), {
+  setHeaders: function (res, path, stat) {
+    res.set('Content-Disposition', 'attachment');
+  }
+}));// model
 app.use("/api/admin", adminRouter);
 app.use("/api/trainer", trainerRouter);
 app.use("/api/member", memberRouter);

@@ -1,0 +1,834 @@
+{
+  "timestamp": "2026-04-01T04:42:04.508Z",
+  "database": {
+    "admins": [
+      {
+        "id": 1,
+        "name": "NoorMohammed Basir",
+        "email": "23ss02it219@ppsu.ac.in",
+        "mobile": "9876543454",
+        "role": "admin",
+        "status": "active",
+        "password": "$2b$10$9PgD/thm5PJCVwV5zrmmHOVqYhaW4gJMThXW.HtRpw4mo7im86OEK"
+      },
+      {
+        "id": 2,
+        "name": "Fahim Raj",
+        "email": "23ss02it161@ppsu.ac.in",
+        "mobile": "9316243930",
+        "role": "admin",
+        "status": "active",
+        "password": "$2b$10$5zqIDZyy2Y7ixYzcArJNPOtIDIq9Aa.8EiRDgO5QeveGYXp46jvuS"
+      },
+      {
+        "id": 3,
+        "name": "FR",
+        "email": "sca23085@gmail.com",
+        "mobile": "9876543454",
+        "role": "frontdesk",
+        "status": "active",
+        "password": "$2b$10$sCj29zzCS7pVbp2nnPEbe.x.cpPQL/FczOMqEX2Uuic0A5FHnyAIS"
+      },
+      {
+        "id": 4,
+        "name": "Ayan Shaikh",
+        "email": "shkayan228@gmail.com",
+        "mobile": "7778912164",
+        "role": "admin",
+        "status": "active",
+        "password": "$2b$10$Y0h6lASBQxZw5f7AU.XWTO5fEJBD6nSL5B2cJSPwx.aH1T0okpdVG"
+      }
+    ],
+    "trainers": [
+      {
+        "id": 1,
+        "name": "Fahim Raj",
+        "email": "23ss02it161@ppsu.ac.in",
+        "mobile": "9316243930",
+        "dob": "2004-11-03T00:00:00.000Z",
+        "gender": "male",
+        "status": "active",
+        "date_of_joining": "2023-11-03T00:00:00.000Z",
+        "createdAt": "2026-03-07T12:57:44.000Z"
+      }
+    ],
+    "members": [
+      {
+        "id": 1,
+        "name": "Fahim Raj",
+        "email": "23ss02it161@ppsu.ac.in",
+        "mobile": "9316243930",
+        "dob": "2004-11-03T00:00:00.000Z",
+        "gender": "male",
+        "status": "active",
+        "blood_group": "O+",
+        "student": "yes",
+        "profile_image": "uploads\\members\\profiles\\profile_image-1774875231531-411558009.png",
+        "document_file": "uploads\\members\\documents\\document_file-1774875231586-241497862.avif",
+        "document_type": "Aadhar",
+        "document_number": "952244763456",
+        "createdAt": "2026-03-07T13:01:09.000Z"
+      },
+      {
+        "id": 2,
+        "name": "Hasnain Feti",
+        "email": "hasnainfeti23@gmail.com",
+        "mobile": "9409444979",
+        "dob": "2003-12-03T00:00:00.000Z",
+        "gender": "male",
+        "status": "active",
+        "blood_group": "B+",
+        "student": "no",
+        "profile_image": null,
+        "document_file": null,
+        "document_type": null,
+        "document_number": null,
+        "createdAt": "2026-03-08T06:24:28.000Z"
+      },
+      {
+        "id": 3,
+        "name": "Noor Mohammed",
+        "email": "23ss02it219@ppsu.ac.in",
+        "mobile": "9876543454",
+        "dob": "2005-01-31T00:00:00.000Z",
+        "gender": "male",
+        "status": "active",
+        "blood_group": "A+",
+        "student": "yes",
+        "profile_image": null,
+        "document_file": null,
+        "document_type": "Aadhar",
+        "document_number": "338200062108",
+        "createdAt": "2026-03-09T08:30:30.000Z"
+      },
+      {
+        "id": 4,
+        "name": "Sultan ",
+        "email": "sultan12@gmail.com",
+        "mobile": "9316243930",
+        "dob": "2003-02-02T00:00:00.000Z",
+        "gender": "male",
+        "status": "active",
+        "blood_group": "A+",
+        "student": "no",
+        "profile_image": null,
+        "document_file": null,
+        "document_type": null,
+        "document_number": null,
+        "createdAt": "2026-03-10T04:13:50.000Z"
+      },
+      {
+        "id": 5,
+        "name": "Ayan Shaikh",
+        "email": "ayanshk01@gmail.com",
+        "mobile": "7778912164",
+        "dob": "2005-10-23T00:00:00.000Z",
+        "gender": "male",
+        "status": "active",
+        "blood_group": "A+",
+        "student": "no",
+        "profile_image": null,
+        "document_file": null,
+        "document_type": null,
+        "document_number": null,
+        "createdAt": "2026-03-15T03:48:42.000Z"
+      },
+      {
+        "id": 6,
+        "name": "Abubakkar",
+        "email": "abubakkar@gmail.com",
+        "mobile": "9876543454",
+        "dob": "2002-11-05T00:00:00.000Z",
+        "gender": "male",
+        "status": "active",
+        "blood_group": "A+",
+        "student": "no",
+        "profile_image": null,
+        "document_file": null,
+        "document_type": null,
+        "document_number": null,
+        "createdAt": "2026-03-16T04:17:59.000Z"
+      },
+      {
+        "id": 7,
+        "name": "Minhaz lariya",
+        "email": "minhaz123@gmail.com",
+        "mobile": "9876543454",
+        "dob": "1992-01-09T00:00:00.000Z",
+        "gender": "male",
+        "status": "active",
+        "blood_group": "A+",
+        "student": "no",
+        "profile_image": "uploads\\members\\profiles\\profile_image-1773899660896-116877180.avif",
+        "document_file": "uploads\\members\\documents\\document_file-1773899660900-806915097.jpg",
+        "document_type": "PAN",
+        "document_number": "ABCDE123F",
+        "createdAt": "2026-03-19T05:54:21.000Z"
+      },
+      {
+        "id": 8,
+        "name": "Samarth Sharma",
+        "email": "samarth.sharma@gmail.com",
+        "mobile": "9316243930",
+        "dob": "1986-06-20T00:00:00.000Z",
+        "gender": "male",
+        "status": "active",
+        "blood_group": "B+",
+        "student": "no",
+        "profile_image": "uploads\\members\\profiles\\profile_image-1774582584964-481099364.jpg",
+        "document_file": "uploads\\members\\documents\\document_file-1774582585107-948174531.avif",
+        "document_type": "Aadhar",
+        "document_number": "123456789012",
+        "createdAt": "2026-03-27T03:36:26.000Z"
+      },
+      {
+        "id": 9,
+        "name": "Kumar G ",
+        "email": "kumar.g@gmail.com",
+        "mobile": "7778912164",
+        "dob": "1985-05-24T00:00:00.000Z",
+        "gender": "male",
+        "status": "active",
+        "blood_group": "A+",
+        "student": "no",
+        "profile_image": "uploads\\members\\profiles\\profile_image-1774872651246-82081231.png",
+        "document_file": "uploads\\members\\documents\\document_file-1774872651301-695710231.jpg",
+        "document_type": "Passport",
+        "document_number": "Z 0000000",
+        "createdAt": "2026-03-30T12:10:51.000Z"
+      },
+      {
+        "id": 10,
+        "name": "Fahad Shaikh",
+        "email": "fahad@gmail.com",
+        "mobile": "7778912145",
+        "dob": "2003-03-01T00:00:00.000Z",
+        "gender": "male",
+        "status": "active",
+        "blood_group": "A+",
+        "student": "yes",
+        "profile_image": "uploads/members/profiles/profile_image-1775014281536-457473658.jpg",
+        "document_file": "uploads/members/documents/document_file-1775014281737-896864146.avif",
+        "document_type": "Aadhar",
+        "document_number": "12345678901",
+        "createdAt": "2026-04-01T03:31:22.000Z"
+      }
+    ],
+    "packages": [
+      {
+        "id": 1,
+        "service_id": 1,
+        "title": "Steam",
+        "duration_in_days": 29,
+        "no_of_sessions": 0,
+        "short_description": "Steam is Available",
+        "mrp_price": "299.00",
+        "discount_price": "0.00",
+        "selling_price": "299.00",
+        "gst_percentage": "0.00",
+        "image": null,
+        "package_includes": "",
+        "appointment_slot_minutes": 30,
+        "appointment_start": "08:00:00",
+        "appointment_end": "20:00:00",
+        "blocked_start": "13:00:00",
+        "blocked_end": "14:00:00",
+        "week_days": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday"
+        ],
+        "status": "active"
+      }
+    ],
+    "services": [
+      {
+        "id": 1,
+        "title": "Steam",
+        "description": "Steam",
+        "status": "active",
+        "createdAt": "2026-03-07T12:58:28.000Z"
+      }
+    ],
+    "inquiries": [
+      {
+        "id": 1,
+        "name": "Jhanvi Katariya",
+        "email": "jhanvikatariya@gmail.com",
+        "mobile": "9429458758",
+        "status": "open",
+        "date": "2026-03-19T07:24:46.000Z",
+        "source": "Walk-in",
+        "convert": "Hot",
+        "Notes": "Can u share some details about trainer , also weight gainer program, evening time women's allow or not..?",
+        "createdAt": "2026-03-19T07:24:46.000Z"
+      },
+      {
+        "id": 2,
+        "name": "Hanif V Patel",
+        "email": "Mohhanifpatel2020@gmail.com",
+        "mobile": "4372351822",
+        "status": "open",
+        "date": "2026-03-31T09:43:22.000Z",
+        "source": "Walk-in",
+        "convert": "Hot",
+        "Notes": "Hi there, if I come today evening and pay for a day, then can I come tomorrow too if my payment is valid upto 24 hours",
+        "createdAt": "2026-03-31T09:43:22.000Z"
+      }
+    ],
+    "membershipPackages": [
+      {
+        "id": 1,
+        "name": "Personal Training(Group) - 3 month",
+        "membership_type": "Gym Membership",
+        "duration": "120 Days",
+        "mrp": "13500.00",
+        "discount": "0.00",
+        "gst_status": "excluded",
+        "gst_percentage": null,
+        "selling_price": "13500.00",
+        "status": "active",
+        "createdAt": "2026-03-07T13:01:59.000Z"
+      },
+      {
+        "id": 2,
+        "name": "Gym Membership: 1 Months (PT)",
+        "membership_type": "Gym Membership(PT)",
+        "duration": "29 Days",
+        "mrp": "2000.00",
+        "discount": "0.00",
+        "gst_status": "included",
+        "gst_percentage": "12.00",
+        "selling_price": "2240.00",
+        "status": "active",
+        "createdAt": "2026-03-11T05:10:49.000Z"
+      },
+      {
+        "id": 3,
+        "name": "Gym Membership: 2 Months (PT)",
+        "membership_type": "Gym Membership(PT)",
+        "duration": "60 days",
+        "mrp": "4000.00",
+        "discount": "0.00",
+        "gst_status": "included",
+        "gst_percentage": "18.00",
+        "selling_price": "4720.00",
+        "status": "active",
+        "createdAt": "2026-03-15T03:49:50.000Z"
+      },
+      {
+        "id": 4,
+        "name": "12 Months Couple Gym Membership (New)",
+        "membership_type": "Gym Membership",
+        "duration": "365 Days",
+        "mrp": "15004.00",
+        "discount": "0.00",
+        "gst_status": "included",
+        "gst_percentage": "18.00",
+        "selling_price": "17704.72",
+        "status": "active",
+        "createdAt": "2026-03-30T12:13:35.000Z"
+      }
+    ],
+    "userMemberships": [
+      {
+        "id": 1,
+        "member_id": 1,
+        "membershippackage_id": 1,
+        "status": "active",
+        "start_at": "2026-01-10",
+        "end_at": "2026-03-15",
+        "amount_paid": 13500,
+        "trainer_assigned": "no",
+        "createdAt": "2026-03-10T04:40:36.000Z",
+        "updatedAt": "2026-03-10T04:40:52.000Z"
+      },
+      {
+        "id": 2,
+        "member_id": 3,
+        "membershippackage_id": 1,
+        "status": "active",
+        "start_at": "2026-01-12",
+        "end_at": "2026-03-16",
+        "amount_paid": 13500,
+        "trainer_assigned": "no",
+        "createdAt": "2026-03-10T04:42:03.000Z",
+        "updatedAt": "2026-03-10T04:42:20.000Z"
+      },
+      {
+        "id": 3,
+        "member_id": 4,
+        "membershippackage_id": 1,
+        "status": "active",
+        "start_at": "2026-02-18",
+        "end_at": "2026-04-18",
+        "amount_paid": 13500,
+        "trainer_assigned": "no",
+        "createdAt": "2026-03-10T04:45:31.000Z",
+        "updatedAt": "2026-03-10T04:46:25.000Z"
+      },
+      {
+        "id": 4,
+        "member_id": 2,
+        "membershippackage_id": 2,
+        "status": "active",
+        "start_at": "2026-03-11",
+        "end_at": "2026-04-11",
+        "amount_paid": 1500,
+        "trainer_assigned": "no",
+        "createdAt": "2026-03-11T05:12:32.000Z",
+        "updatedAt": "2026-03-11T05:12:32.000Z"
+      },
+      {
+        "id": 5,
+        "member_id": 5,
+        "membershippackage_id": 3,
+        "status": "active",
+        "start_at": "2026-02-25",
+        "end_at": "2026-04-25",
+        "amount_paid": 5569,
+        "trainer_assigned": "no",
+        "createdAt": "2026-03-15T03:51:09.000Z",
+        "updatedAt": "2026-03-27T10:15:40.000Z"
+      },
+      {
+        "id": 6,
+        "member_id": 6,
+        "membershippackage_id": 2,
+        "status": "active",
+        "start_at": "2026-03-19",
+        "end_at": "2026-04-19",
+        "amount_paid": 2508,
+        "trainer_assigned": "no",
+        "createdAt": "2026-03-19T05:47:03.000Z",
+        "updatedAt": "2026-03-27T10:14:38.000Z"
+      },
+      {
+        "id": 7,
+        "member_id": 2,
+        "membershippackage_id": 1,
+        "status": "active",
+        "start_at": "2025-02-03",
+        "end_at": "2026-05-03",
+        "amount_paid": 13500,
+        "trainer_assigned": "no",
+        "createdAt": "2026-03-28T07:42:59.000Z",
+        "updatedAt": "2026-03-29T04:00:54.000Z"
+      }
+    ],
+    "appointments": [
+      {
+        "id": 1,
+        "package_id": 1,
+        "member_id": 1,
+        "date": "2026-03-06",
+        "slot": "10:00 AM",
+        "amount": 0,
+        "payment_status": "paid",
+        "createdAt": "2026-03-07T13:03:48.000Z",
+        "updatedAt": "2026-03-07T13:03:48.000Z"
+      },
+      {
+        "id": 2,
+        "package_id": 1,
+        "member_id": 1,
+        "date": "2026-03-06",
+        "slot": "11:00 AM",
+        "amount": 0,
+        "payment_status": "paid",
+        "createdAt": "2026-03-07T17:00:39.000Z",
+        "updatedAt": "2026-03-07T17:00:39.000Z"
+      },
+      {
+        "id": 3,
+        "package_id": 1,
+        "member_id": 2,
+        "date": "2026-03-08",
+        "slot": "09:00 AM",
+        "amount": 0,
+        "payment_status": "pending",
+        "createdAt": "2026-03-08T06:24:53.000Z",
+        "updatedAt": "2026-03-08T06:24:53.000Z"
+      },
+      {
+        "id": 4,
+        "package_id": 1,
+        "member_id": 9,
+        "date": "2026-03-29",
+        "slot": "06:00 PM",
+        "amount": 299,
+        "payment_status": "paid",
+        "createdAt": "2026-03-30T12:46:18.000Z",
+        "updatedAt": "2026-03-30T12:46:18.000Z"
+      }
+    ],
+    "levels": [
+      {
+        "id": 1,
+        "title": "Advanced ",
+        "image": "1773471120491-440778919.png",
+        "description": "Advanced",
+        "status": "active",
+        "createdAt": "2026-03-14T06:47:46.000Z"
+      }
+    ],
+    "fitnessGoals": [
+      {
+        "id": 1,
+        "title": "Muscle Gain ",
+        "description": "Muscle Gain - Weight Gain (Double Muscle)",
+        "status": "active",
+        "createdAt": "2026-03-14T07:08:25.000Z"
+      }
+    ],
+    "equipmentList": [
+      {
+        "id": 1,
+        "title": "Pendulum Squats",
+        "image": "1773472873893-72184411.jpg",
+        "description": "Pendulum Squats",
+        "status": "active",
+        "createdAt": "2026-03-14T07:21:14.000Z"
+      }
+    ],
+    "invoiceDetails": [
+      {
+        "id": 1,
+        "invoicemaster_id": 1,
+        "member_id": null,
+        "usermembership_id": 1,
+        "package_id": 1,
+        "membershippackage_id": 1,
+        "amount_rate": 13500,
+        "gst_rate": 0,
+        "total": 13500
+      },
+      {
+        "id": 2,
+        "invoicemaster_id": 2,
+        "member_id": null,
+        "usermembership_id": 2,
+        "package_id": 1,
+        "membershippackage_id": 1,
+        "amount_rate": 13500,
+        "gst_rate": 0,
+        "total": 13500
+      },
+      {
+        "id": 3,
+        "invoicemaster_id": 3,
+        "member_id": null,
+        "usermembership_id": 3,
+        "package_id": 1,
+        "membershippackage_id": 1,
+        "amount_rate": 13500,
+        "gst_rate": 0,
+        "total": 13500
+      },
+      {
+        "id": 4,
+        "invoicemaster_id": 4,
+        "member_id": null,
+        "usermembership_id": 4,
+        "package_id": 2,
+        "membershippackage_id": 2,
+        "amount_rate": 2240,
+        "gst_rate": 0,
+        "total": 2240
+      },
+      {
+        "id": 5,
+        "invoicemaster_id": 5,
+        "member_id": null,
+        "usermembership_id": 5,
+        "package_id": 3,
+        "membershippackage_id": 3,
+        "amount_rate": 4720,
+        "gst_rate": 18,
+        "total": 5569.6
+      },
+      {
+        "id": 6,
+        "invoicemaster_id": 6,
+        "member_id": null,
+        "usermembership_id": 6,
+        "package_id": 2,
+        "membershippackage_id": 2,
+        "amount_rate": 2240,
+        "gst_rate": 12,
+        "total": 2508.8
+      },
+      {
+        "id": 7,
+        "invoicemaster_id": 7,
+        "member_id": null,
+        "usermembership_id": 7,
+        "package_id": 1,
+        "membershippackage_id": 1,
+        "amount_rate": 13500,
+        "gst_rate": 0,
+        "total": 13500
+      }
+    ],
+    "financialYears": [
+      {
+        "id": 1,
+        "name": "FY 2025-2026",
+        "date_start": "2025-04-01",
+        "date_end": "2026-03-31",
+        "is_active": true,
+        "createdAt": "2026-03-09T05:08:14.000Z"
+      }
+    ],
+    "invoiceMasters": [
+      {
+        "id": 1,
+        "financialyear_id": 1,
+        "invoice_no": "INV-1773117636595",
+        "member_id": 1,
+        "gross_amount": 13500,
+        "gst_amount": 0,
+        "gst_percentage": 0,
+        "gst_type": "none",
+        "receipt_date": "2026-03-10",
+        "usermembership_id": 1,
+        "net_amount": 13500,
+        "payment_status": "paid",
+        "createdAt": "2026-03-10T04:40:36.000Z"
+      },
+      {
+        "id": 2,
+        "financialyear_id": 1,
+        "invoice_no": "INV-1773117723750",
+        "member_id": 3,
+        "gross_amount": 13500,
+        "gst_amount": 0,
+        "gst_percentage": 0,
+        "gst_type": "none",
+        "receipt_date": "2026-03-10",
+        "usermembership_id": 2,
+        "net_amount": 13500,
+        "payment_status": "paid",
+        "createdAt": "2026-03-10T04:42:03.000Z"
+      },
+      {
+        "id": 3,
+        "financialyear_id": 1,
+        "invoice_no": "INV-1773117931293",
+        "member_id": 4,
+        "gross_amount": 13500,
+        "gst_amount": 0,
+        "gst_percentage": 0,
+        "gst_type": "none",
+        "receipt_date": "2026-03-10",
+        "usermembership_id": 3,
+        "net_amount": 13500,
+        "payment_status": "paid",
+        "createdAt": "2026-03-10T04:45:31.000Z"
+      },
+      {
+        "id": 4,
+        "financialyear_id": 1,
+        "invoice_no": "INV-1773205952690",
+        "member_id": 2,
+        "gross_amount": 2240,
+        "gst_amount": 0,
+        "gst_percentage": 0,
+        "gst_type": "none",
+        "receipt_date": "2026-03-11",
+        "usermembership_id": 4,
+        "net_amount": 2240,
+        "payment_status": "partial",
+        "createdAt": "2026-03-11T05:12:32.000Z"
+      },
+      {
+        "id": 5,
+        "financialyear_id": 1,
+        "invoice_no": "INV-1773546669479",
+        "member_id": 5,
+        "gross_amount": 4720,
+        "gst_amount": 849.6,
+        "gst_percentage": 18,
+        "gst_type": "included",
+        "receipt_date": "2026-03-15",
+        "usermembership_id": 5,
+        "net_amount": 5569.6,
+        "payment_status": "partial",
+        "createdAt": "2026-03-15T03:51:09.000Z"
+      },
+      {
+        "id": 6,
+        "financialyear_id": 1,
+        "invoice_no": "INV-1773899223891",
+        "member_id": 6,
+        "gross_amount": 2240,
+        "gst_amount": 268.8,
+        "gst_percentage": 12,
+        "gst_type": "included",
+        "receipt_date": "2026-03-19",
+        "usermembership_id": 6,
+        "net_amount": 2508.8,
+        "payment_status": "partial",
+        "createdAt": "2026-03-19T05:47:03.000Z"
+      },
+      {
+        "id": 7,
+        "financialyear_id": 1,
+        "invoice_no": "INV-1774683779180",
+        "member_id": 2,
+        "gross_amount": 13500,
+        "gst_amount": 0,
+        "gst_percentage": 0,
+        "gst_type": "excluded",
+        "receipt_date": "2026-03-28",
+        "usermembership_id": 7,
+        "net_amount": 13500,
+        "payment_status": "paid",
+        "createdAt": "2026-03-28T07:42:59.000Z"
+      }
+    ],
+    "payments": [
+      {
+        "id": 1,
+        "invoice_id": 1,
+        "payment_date": "2026-03-10",
+        "payment_mode": "card",
+        "amount": 5000,
+        "reference": "Initial Payment"
+      },
+      {
+        "id": 2,
+        "invoice_id": 1,
+        "payment_date": "2026-03-10",
+        "payment_mode": "cash",
+        "amount": 8500,
+        "reference": null
+      },
+      {
+        "id": 3,
+        "invoice_id": 2,
+        "payment_date": "2026-03-10",
+        "payment_mode": "cash",
+        "amount": 4000,
+        "reference": "Initial Payment"
+      },
+      {
+        "id": 4,
+        "invoice_id": 2,
+        "payment_date": "2026-03-10",
+        "payment_mode": "cash",
+        "amount": 9500,
+        "reference": null
+      },
+      {
+        "id": 5,
+        "invoice_id": 3,
+        "payment_date": "2026-03-10",
+        "payment_mode": "upi",
+        "amount": 500,
+        "reference": "Initial Payment"
+      },
+      {
+        "id": 6,
+        "invoice_id": 3,
+        "payment_date": "2026-03-10",
+        "payment_mode": "cash",
+        "amount": 2000,
+        "reference": null
+      },
+      {
+        "id": 7,
+        "invoice_id": 3,
+        "payment_date": "2026-03-10",
+        "payment_mode": "card",
+        "amount": 11000,
+        "reference": null
+      },
+      {
+        "id": 8,
+        "invoice_id": 4,
+        "payment_date": "2026-03-11",
+        "payment_mode": "upi",
+        "amount": 1500,
+        "reference": "Initial Payment"
+      },
+      {
+        "id": 9,
+        "invoice_id": 5,
+        "payment_date": "2026-03-15",
+        "payment_mode": "upi",
+        "amount": 2000,
+        "reference": "Initial Payment"
+      },
+      {
+        "id": 10,
+        "invoice_id": 6,
+        "payment_date": "2026-03-19",
+        "payment_mode": "cash",
+        "amount": 2000,
+        "reference": "Initial Payment"
+      },
+      {
+        "id": 11,
+        "invoice_id": 6,
+        "payment_date": "2026-03-27",
+        "payment_mode": "upi",
+        "amount": 508,
+        "reference": null
+      },
+      {
+        "id": 12,
+        "invoice_id": 5,
+        "payment_date": "2026-03-27",
+        "payment_mode": "cash",
+        "amount": 3569,
+        "reference": null
+      },
+      {
+        "id": 13,
+        "invoice_id": 7,
+        "payment_date": "2026-03-28",
+        "payment_mode": "card",
+        "amount": 5000,
+        "reference": "Initial Payment"
+      },
+      {
+        "id": 14,
+        "invoice_id": 7,
+        "payment_date": "2026-03-29",
+        "payment_mode": "card",
+        "amount": 8500,
+        "reference": null
+      }
+    ],
+    "bmiHistory": [
+      {
+        "id": 1,
+        "member_id": 1,
+        "height": 50,
+        "weight": 40,
+        "bmi_score": 160,
+        "status": "Obese",
+        "is_free": true,
+        "check_date": "2026-03-30T11:46:36.000Z",
+        "createdAt": "2026-03-30T11:46:36.000Z",
+        "updatedAt": "2026-03-30T11:46:36.000Z"
+      },
+      {
+        "id": 2,
+        "member_id": 4,
+        "height": 78,
+        "weight": 54,
+        "bmi_score": 88.8,
+        "status": "Obese",
+        "is_free": true,
+        "check_date": "2026-03-31T04:05:35.000Z",
+        "createdAt": "2026-03-31T04:05:35.000Z",
+        "updatedAt": "2026-03-31T04:05:35.000Z"
+      }
+    ]
+  }
+}
