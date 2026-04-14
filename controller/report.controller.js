@@ -1,6 +1,7 @@
 const { Op } = require("sequelize");
 const InvoiceMaster = require("../models/InvoiceMaster");
 const Payment = require("../models/Payment");
+const FinancialYear = require("../models/FinancialYear");
 
 // 1. Sales Register (All Invoices within a date range)
 exports.getSalesRegister = async (req, res) => {
@@ -9,14 +10,20 @@ exports.getSalesRegister = async (req, res) => {
 
     const invoices = await InvoiceMaster.findAll({
       where: {
-        receipt_date: { // 👈 Updated to match your model
+        receipt_date: {
           [Op.between]: [new Date(startDate), new Date(endDate)],
         },
       },
+      include: [
+        {
+          model: FinancialYear,
+          as: 'financialYear', // <-- MATCHING WITH ASSOCIATION
+          attributes: ['name'],
+        }
+      ],
       order: [["receipt_date", "DESC"]],
     });
 
-    // Calculate Totals using your exact column names
     const totals = invoices.reduce((acc, inv) => {
       acc.gross_amount += Number(inv.gross_amount || 0);
       acc.gst_amount += Number(inv.gst_amount || 0);
@@ -37,11 +44,25 @@ exports.getCashReport = async (req, res) => {
 
     const payments = await Payment.findAll({
       where: {
-        payment_date: { // 👈 Updated to match your model
+        payment_date: {
           [Op.between]: [new Date(startDate), new Date(endDate)],
         },
         payment_mode: "cash", 
       },
+      // NESTED INCLUDE (Kyunki Payment direct Financial Year se nahi juda hai)
+      include: [
+        {
+          model: InvoiceMaster,
+          as: 'invoice',
+          include: [
+            {
+              model: FinancialYear,
+              as: 'financialYear',
+              attributes: ['name'],
+            }
+          ]
+        }
+      ],
       order: [["payment_date", "DESC"]],
     });
 
@@ -60,10 +81,17 @@ exports.getGstReport = async (req, res) => {
 
     const invoices = await InvoiceMaster.findAll({
       where: {
-        receipt_date: { // 👈 Updated to match your model
+        receipt_date: {
           [Op.between]: [new Date(startDate), new Date(endDate)],
         },
       },
+      include: [
+        {
+          model: FinancialYear,
+          as: 'financialYear',
+          attributes: ['name'],
+        }
+      ],
       order: [["receipt_date", "DESC"]],
     });
 

@@ -15,19 +15,27 @@ exports.createUserMembership = async (data, transaction) => {
 };
 
 // GET ALL (With all nested relations)
-exports.getAllUserMemberships = async () => {
+exports.getAllUserMemberships = async (financialyear_id) => {
   try {
+    // 👈 NAYA LOGIC: FY filter
+    const invoiceCondition = {};
+    if (financialyear_id) {
+        invoiceCondition.financialyear_id = financialyear_id;
+    }
+
     const result = await UserMembership.findAll({
       include: [
-        { model: Member, as: "member", attributes: ["id", "name", "mobile"] },
+        { model: Member, as: "member", attributes: ["id", "name", "mobile", "email"] },
         {
           model: MembershipPackage,
-          as: "membershipPackage", // Ya jo bhi aapne association ka naam rakha ho
-          // 👇 YE LINE ADD KARNI HAI 👇
+          as: "membershipPackage",
           attributes: ["id", "name", "selling_price", "mrp", "gst_status", "gst_percentage"]
-        }, {
+        }, 
+        {
           model: InvoiceMaster,
-          include: [{ model: Payment }] // Invoice ke andar uski saari payments
+          where: invoiceCondition, // 👈 Filter lag gaya
+          required: financialyear_id ? true : false, // 👈 Agar filter bheja hai to sirf wahi ayenge (Inner Join)
+          include: [{ model: Payment }]
         }
       ],
       order: [["createdAt", "DESC"]],

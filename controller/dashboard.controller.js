@@ -58,14 +58,14 @@ exports.getDashboardOverview = async (req, res) => {
       order: [[fn("MONTH", col("payment_date")), "ASC"]],
     });
 
-    // 3. CHART 2: MONTHLY MEMBER GROWTH (For Line Chart)
-    const monthlyMemRaw = await Member.findAll({
+    // 3. CHART 2: DAILY MEMBER GROWTH (For Line Chart) - UPDATED FOR OPTION 2
+    const dailyMemRaw = await Member.findAll({
       attributes: [
-        [fn("MONTH", col("createdAt")), "month"],
+        [fn("DATE", col("createdAt")), "date"], // Grouping by exact date
         [fn("COUNT", col("id")), "count"],
       ],
-      group: [fn("MONTH", col("createdAt"))],
-      order: [[fn("MONTH", col("createdAt")), "ASC"]],
+      group: [fn("DATE", col("createdAt"))],
+      order: [[fn("DATE", col("createdAt")), "ASC"]],
     });
 
     // 4. CHART 3: MEMBERSHIP DISTRIBUTION (For Doughnut Chart)
@@ -86,10 +86,16 @@ exports.getDashboardOverview = async (req, res) => {
       total: parseFloat(m.getDataValue("total")),
     }));
 
-    const monthlyMembers = monthlyMemRaw.map((m) => ({
-      month: monthNames[m.getDataValue("month") - 1] || "N/A",
-      count: parseInt(m.getDataValue("count"), 10),
-    }));
+    // 👇 UPDATED: Formatting daily members into "DD MMM" (e.g., "12 Mar")
+    const monthlyMembers = dailyMemRaw.map((m) => {
+      const rawDate = new Date(m.getDataValue("date"));
+      const formattedDate = `${rawDate.getDate()} ${monthNames[rawDate.getMonth()]}`; 
+      
+      return {
+        date: formattedDate, 
+        count: parseInt(m.getDataValue("count"), 10),
+      };
+    });
 
     const membershipDistribution = packageDistRaw.map((p) => ({
       name: p.membershipPackage ? p.membershipPackage.name : "Unknown",
@@ -102,7 +108,9 @@ exports.getDashboardOverview = async (req, res) => {
         totalAdmins, totalTrainers, activeTrainers, inactiveTrainers,
         totalMembers, activeMemberships, expiringSoon,
         totalRevenue, todaysRevenue,
-        monthlyRevenue, monthlyMembers, membershipDistribution
+        monthlyRevenue, 
+        monthlyMembers, // Ab yeh daily basis par date format ke saath jayega
+        membershipDistribution
       },
     });
   } catch (error) {
